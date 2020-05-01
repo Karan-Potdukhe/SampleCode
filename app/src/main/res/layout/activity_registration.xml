@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".Registration">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/viba"
+    />
+</RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="10dp" android:textColorHint="@color/colorAccent" android:focusableInTouchMode="true" android:focusable="true">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Full Name"
+        android:id="@+id/txt_fullname"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="10dp" android:textColorHint="@color/colorAccent" android:focusableInTouchMode="true" android:focusable="true">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="User Name"
+        android:id="@+id/txt_username"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="10dp" android:textColorHint="@color/colorAccent" android:focusableInTouchMode="true" android:focusable="true">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="Email"
+        android:id="@+id/txt_email"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="10dp" android:textColorHint="@color/colorAccent" android:focusableInTouchMode="true" android:focusable="true">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Password"
+        android:id="@+id/txt_password"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="10dp" android:textColorHint="@color/colorAccent" android:focusableInTouchMode="true" android:focusable="true">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Conform Password"
+        android:id="@+id/txt_conformpassword"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="10dp" android:textColorHint="@color/colorAccent" android:focusableInTouchMode="true" android:focusable="true">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:id="@+id/txt_contactnumber"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/colorAccent"
+        android:focusableInTouchMode="true"
+        android:focusable="true">
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:ems="10"
+            android:hint="State"
+            android:id="@+id/txt_state"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="10dp" android:textColorHint="@color/colorAccent" android:focusableInTouchMode="true" android:focusable="true">
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:ems="10"
+            android:hint="City"
+            android:id="@+id/txt_city"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+       <TextView
+           android:id="@+id/spintext"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Category"
+           android:textSize="20dp"
+           android:textColor="#203777"
+           />
+    <Spinner
+        android:id="@+id/spineer"
+        android:layout_toRightOf="@+id/spintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    </RelativeLayout>
+    <Button
+        android:background="@drawable/button"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:textSize="22sp"
+        android:id="@+id/btn_register"
+        android:textColor="#ffffff"
+        android:text="Register" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already Registered? Go to Login Page"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="#203777"
+        />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Manualapp</string>
+    <string-array name="category">
+        <item>Student</item>
+        <item>Professor</item>
+        <item>Business/Startup Executives</item>
+        <item>Company Professionals</item>
+    </string-array>
+</resources>

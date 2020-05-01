@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".LoginPage">
+
+    <ImageView
+        android:padding="30dp"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/viba"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/colorAccent"
+        android:focusableInTouchMode="true"
+        android:focusable="true">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Email"
+        android:id="@+id/email"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="10dp" android:textColorHint="@color/colorAccent" android:focusableInTouchMode="true" android:focusable="true" app:passwordToggleEnabled="true">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password"
+        android:id="@+id/password"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:textSize="22sp"
+        android:id="@+id/btn_lgn"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        android:text="Login"/>
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        android:text="Register"
+        android:id="@+id/btn_reg"
+        android:onClick="btn_signupForm"/>
+
+</LinearLayout>
+

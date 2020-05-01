@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+   <ImageView
+       android:id="@+id/imga"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/viba"
+       />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_below="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome To VIBA"
+            android:textSize="70dp"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#54156B"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:textColor="#FCFAFA"
+            android:text="Login"
+            android:id="@+id/buttonlogin"
+            android:layout_marginTop="50dp"
+            android:textSize="40sp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:textColor="#FCFAFA"
+            android:text="Register"
+            android:id="@+id/buttonregister"
+            android:layout_marginTop="50dp"
+            android:textSize="40sp"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
